@@ -1,5 +1,4 @@
 # Neural Network Multiclass Classification-Octave
-# Univariate And Multivariate Linear Regression-Octave
 This project is part of the **Machine Learning** course offered by **Andrew Ng**.
 # nnCostFunction.m -- *Script File*
 **nnCostFunction.m** file has `nnCostFunction()` method, that is used to find cost **J** and **gradient** for neural network. The return values of this method are **J**  and **gradient** . **gradient** has two gradient parameters `Theta1_grad (25 x 401)` and  `Theta2_grad (10 x 26)` which are `unrolled` into a long vector. The method looks like in octave `function [J grad] = nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels,X, y, lambda)`, where **X** is `m x (n+1)` matrix, **y** is `m x 1` matrix, **lambda** is regularization parameter, **nn_params** is the `unrolled` theta parameter which contains `Theta1` and `Theta2`, **hidden_layer_size** is the number of units in the hidden layer, and **num_labels** is the number of classes.

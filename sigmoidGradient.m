@@ -1,4 +1,4 @@
-function g = sigmoidGradient(z)
+function g = sigmoidGradient(z) # z could be vector or matrix of any size
 %SIGMOIDGRADIENT returns the gradient of the sigmoid function
 %evaluated at z
 %   g = SIGMOIDGRADIENT(z) computes the gradient of the sigmoid function

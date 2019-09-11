@@ -33,7 +33,8 @@ X = [ones(m, 1) X];
 %         cost function computation is correct by verifying the cost
 %         computed in ex4.m
 
-% +++++++ Feedforward: CALCULATING A3 ++++++++
+% +++++++ Feedforward Propogation Algorithm ++++++++
+% +++++++Vectorize Implementation +++++++++
 
 %Z2 = Theta1 X   Theta1 = 25 x 401 and X = 5000 x 401
 Z2= Theta1 * X'; # Z2= 25 x 5000 return Z2 for 5000 training sets
@@ -83,6 +84,8 @@ J= J + reg;
 Theta1_grad = zeros(size(Theta1));  # 25x 401
 Theta2_grad = zeros(size(Theta2));  #10 x 26
 
+%++++++++++BackPropogation Algorithm+++++++++++++++
+% +++++++Vectorize Implementation +++++++++
 %
 % Part 2: Implement the backpropagation algorithm to compute the gradients
 %         Theta1_grad and Theta2_grad. You should return the partial derivatives of
